@@ -1,0 +1,206 @@
+/*  
+    1rem is 10px
+
+    h1 font-size is 36px
+    h2 font-size is 30px
+    p font-size is 18px
+
+    this confused me for a while, but it's due to the bootstrapping. damn you, bootstrap!
+*/
+
+* {
+    box-sizing: border-box; /* this means that when you define the width and height of a box, it will INCLUDE padding. */
+}
+
+body {
+    margin: 0;
+    font-family: Garamond, serif;
+
+    background-color: #040529;
+    background-image: url('pix_n_clipz/beautiful3.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    color: #dddddd;
+}
+
+p {
+    color: #dddddd;
+}
+
+
+
+.divider {
+    background-color: #3f0d4d;
+    color: #dddddd;
+    padding-top: 2px;
+    padding-bottom: 15px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    max-width: 2000px;
+    gap: 10px;
+    padding: 20px;
+}
+
+.project__card {
+    background-color: #3f0d4d;
+    color: #dddddd;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.project__card--picture {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #3f0d4d;
+}
+
+.project__card--picture img,
+.project__card--picture video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project__card--text {
+    padding: 20px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.project__card--texttitle {
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #dddddd;
+}
+
+.item img,
+.item video {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.footer img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.footer__text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8),
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: #dddddd;
+    text-decoration: none; 
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.header div {
+    background-color: #3f0d4d;
+    color: #dddddd;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.header div:hover {
+    background-color: #9835b4;
+}
+
+
+
+.logo img {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    max-width: 120px;
+    max-height: 120px;
+}
+
+
+
+/* v this is the desktop version v */
+
+@media (min-width: 768px) {
+
+    .header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header div {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .logo img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .project {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .project__card {
+        max-width: 2000px;
+        width: 100%;
+    }
+
+}
