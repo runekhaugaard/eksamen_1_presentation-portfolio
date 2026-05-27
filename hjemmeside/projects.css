@@ -30,18 +30,18 @@ body {
 h1,
 h2 {
     font-weight: bold;
-    color: #dddddd;
+    color: #e8e8e8;
 }
 
 p {
-    color: #dddddd;
+    color: #e8e8e8;
 }
 
 
 
 .divider {
     background-color: #3f0d4d;
-    color: #dddddd;
+    color: #e8e8e8;
     padding-top: 2px;
     padding-bottom: 15px;
     font-size: 1.8rem;
@@ -60,7 +60,7 @@ p {
 
 .project__card {
     background-color: #3f0d4d;
-    color: #dddddd;
+    color: #e8e8e8;
     padding: 10px;
     border-radius: 12px;
 }
@@ -90,7 +90,7 @@ p {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 3rem;
-    color: #dddddd;
+    color: #e8e8e8;
 }
 
 .item img,
@@ -133,7 +133,7 @@ a,
 a:visited,
 a:hover,
 a:active {
-    color: #dddddd;
+    color: #e8e8e8;
     text-decoration: none; 
 }
 
@@ -148,7 +148,7 @@ a:active {
 
 .header div {
     background-color: #3f0d4d;
-    color: #dddddd;
+    color: #e8e8e8;
     padding: 10px;
     border-radius: 12px;
     font-size: 1.8rem;
