@@ -1,15 +1,6 @@
-/*  
-    1rem is 10px
-
-    h1 font-size is 36px
-    h2 font-size is 30px
-    p font-size is 18px
-
-    this confused me for a while, but it's due to the bootstrapping. damn you, bootstrap!
-*/
-
 * {
     box-sizing: border-box; /* this means that when you define the width and height of a box, it will INCLUDE padding. */
+    color: #e8e8e8;
 }
 
 body {
@@ -30,28 +21,30 @@ body {
 h1,
 h2 {
     font-weight: bold;
-    color: #e8e8e8;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 p {
-    color: #e8e8e8;
+    font-size: 18px;
+    line-height: 1.2;
+    word-spacing: 1.2px;
 }
 
 
 
 .divider {
     background-color: #3f0d4d;
-    color: #e8e8e8;
     padding-top: 2px;
     padding-bottom: 15px;
     font-size: 1.8rem;
     text-align: center;
-}
-
-
-
-.content {
-    color: #e8e8e8;
 }
 
 
@@ -74,35 +67,33 @@ p {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
 
     text-shadow: 
-        0 0 5px rgba(255, 255, 255, 0.8),
-        0 0 10px rgba(255, 255, 255, 0.8),
-        0 0 20px rgba(255, 255, 255, 0.8);
+        0 0 5px rgba(232, 232, 232, 0.8),
+        0 0 10px rgba(232, 232, 232, 0.8),
+        0 0 20px rgba(232, 232, 232, 0.8);
 }
 
 a,
 a:visited,
 a:hover,
 a:active {
-    color: #e8e8e8;
     text-decoration: none; 
 }
 
 
 
-.header {
+.navigation_buttons {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
 }
 
-.header div {
+.navigation_buttons div {
     background-color: #3f0d4d;
-    color: #e8e8e8;
     padding: 10px;
     border-radius: 12px;
     font-size: 1.8rem;
@@ -111,7 +102,7 @@ a:active {
     transition: background-color 0.2s ease;
 }
 
-.header div:hover {
+.navigation_buttons div:hover {
     background-color: #9835b4;
 }
 
@@ -133,38 +124,40 @@ a:active {
     border-radius: 5px;
     padding: 20px;
     max-width: 800px;
+    font-family: Garamond, serif;
+    font-weight: bold;
+    font-size: 14px;
 
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
-label {
-    color:#e8e8e8;
-}
 
 
 input[type=text], select, textarea {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 12px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+    font-family: Garamond, serif;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
 input[type=submit] {
-  background-color: #3f0d4d;
-  color: #e8e8e8;
-  padding: 10px;
-  border: none;
-  border-radius: 12px;
-  font-size: 1.8rem;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+    background-color: #3f0d4d;
+    
+    font-family: Garamond, serif;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 input[type=submit]:hover {
@@ -177,13 +170,13 @@ input[type=submit]:hover {
 
 @media (min-width: 768px) {
 
-    .header {
+    .navigation_buttons {
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    .header div {
+    .navigation_buttons div {
         max-width: 250px;
         width: 100%;
     }
