@@ -4,11 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- this bootstrap is an accidental leftover from an old exercize,
-         from which I reused the initial html and css as a template for this site.
-         I completely overlooked it until it was way too late to remove it,
-         without spend hours fixing everything that would now look wrong. Oopsie. -->
     <title>Projects</title>
     <link rel="stylesheet" href="projects.css">
     <link rel="icon" href="leftovers/logo.png">
@@ -21,7 +16,7 @@
     </div>
 
     <main>
-        <div class="header">
+        <nav class="navigation_buttons">
             <div>
                 <a href="index.html">Home</a>
             </div>
@@ -31,18 +26,15 @@
             <div>
                 <a href="contact.html">Contact</a>
             </div>
-        </div>
+        </nav>
 
-        <div class="divider">
+        <header class="divider">
             <h1>So, you wanna see my portfolio?</h1>
-            <p>
-                I don't blame you, it's <i>pretty</i> neat.
-            </p>
-        </div>
+            <p>I don't blame you, it's <i>pretty</i> neat.</p>
+        </header>
 
-        <br><br>
-
-        <div class="project">
+        
+        <section class="project">
             <!-- pump poster -->
             <div class="project__card">
                 <div class="project__card--picture">
@@ -51,11 +43,11 @@
                 <div class="project__card--text">
                     <div class="project__card--texttitle"><h2>Poster ─ Information and Datavisualization</h2></div>
                         <p>
-                            A large-size poster made with Adobe's InDesign program.
+                            A poster made with Adobe's Photoshop program.
                         </p>
                         <p>
-                            The poster was designed with the idea of being big enough to house a full-size ape, creating a more interactive learning experience for a target audience of children.
-                        </p>
+                            The poster was designed to explain the process behind a group assignment, including both the assignment description
+                        </p>    
                 </div>
             </div>
             <!-- monkey poster -->
@@ -66,10 +58,10 @@
                 <div class="project__card--text">
                     <div class="project__card--texttitle"><h2>Poster ─ Interactive Education</h2></div>
                         <p>
-                            A poster made with Adobe's Photoshop program.
+                            A large-size poster made with Adobe's InDesign program.
                         </p>
                         <p>
-                            The poster was designed to explain the process behind a group assignment, including both the assignment description
+                            The poster was designed with the idea of being big enough to house a full-size ape, creating a more interactive learning experience for a target audience of children.
                         </p>
                 </div>
             </div>
@@ -91,9 +83,9 @@
                         </p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="project">
+        <section class="project">
             <!-- gnome video -->
             <div class="project__card">
                 <div class="project__card--picture">
@@ -142,7 +134,7 @@
                         </p>
                 </div>
             </div>
-        </div>
+        </section>
 
 
     </main>
@@ -151,7 +143,7 @@
         <img src="pix_n_clipz/footer_trees.png" alt="trees :D">
 
         <div class="footer__text">
-            &copy; 2026 My Website. All rights reserved.
+            &copy; 2026 Rune Inc. All rights reserved.
         </div>
 
     </footer>
