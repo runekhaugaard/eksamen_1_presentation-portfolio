@@ -4,11 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- this bootstrap is an accidental leftover from an old exercize,
-         from which I reused the initial html and css as a template for this site.
-         I completely overlooked it until it was way too late to remove it,
-         without spend hours fixing everything that would now look wrong. Oopsie. -->
     <title>Contact</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="icon" href="leftovers/logo.png">
@@ -20,7 +15,8 @@
         <img src="pix_n_clipz/logo_name.png" alt="my logo">
     </div>
 
-        <div class="header">
+    <main>
+        <nav class="navigation_buttons">
             <div>
                 <a href="index.html">Home</a>
             </div>
@@ -30,20 +26,16 @@
             <div>
                 <a href="contact.html">Contact</a>
             </div>
-        </div>
+        </nav>
 
-        <div class="divider">
+        <header class="divider">
             <h1>Contact me!</h1>
             <p>
                 Well, go on then!
             </p>
-        </div>
-    
-        <br><br>
+        </header>
 
-    <main>
-
-        <div class="contact">
+        <section class="contact">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="What's your name?...">
 
@@ -54,7 +46,7 @@
             <textarea id="subject" name="subject" placeholder="Write something great!..." style="height:200px"></textarea>
 
             <input type="submit" value="Submit">
-        </div>
+        </section>
 
     </main>
 
@@ -62,7 +54,7 @@
         <img src="pix_n_clipz/footer_trees.png" alt="trees :D">
 
         <div class="footer__text">
-            &copy; 2026 My Website. All rights reserved.
+            &copy; 2026 Rune Inc. All rights reserved.
         </div>
 
     </footer>
